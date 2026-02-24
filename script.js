@@ -1,10 +1,10 @@
 const menu = [
-  { id: 1, name: 'Chicken Shawarma', price: 12, category: 'Wraps', desc: 'Garlic sauce, pickles, fries.', image: 'assets/ac7nyu1f7.webp' },
-  { id: 2, name: 'Mix Grill Plate', price: 34, category: 'Grills', desc: 'Kebab, tikka, grilled chicken.', image: 'assets/ac7n6uwv0.webp' },
-  { id: 3, name: 'Zinger Wrap', price: 16, category: 'Wraps', desc: 'Crispy chicken, lettuce, mayo.', image: 'assets/ac7nyu1f7.webp' },
-  { id: 4, name: 'Family Meal Box', price: 79, category: 'Family', desc: 'Wraps, fries, drinks for 4.', image: 'assets/a90zx6u0e.webp' },
-  { id: 5, name: 'Loaded Fries', price: 14, category: 'Sides', desc: 'Cheese sauce + jalapeno.', image: 'assets/a90zx6u0e.webp' },
-  { id: 6, name: 'Grilled Chicken Meal', price: 28, category: 'Grills', desc: 'Quarter chicken + rice.', image: 'assets/ac7n6uwv0.webp' }
+  { id: 1, name: 'Chicken Shawarma', price: 12, category: 'Wraps', desc: 'Garlic sauce, pickles, fries.', image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=70' },
+  { id: 2, name: 'Mix Grill Plate', price: 34, category: 'Grills', desc: 'Kebab, tikka, grilled chicken.', image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=70' },
+  { id: 3, name: 'Zinger Wrap', price: 16, category: 'Wraps', desc: 'Crispy chicken, lettuce, mayo.', image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=70' },
+  { id: 4, name: 'Family Meal Box', price: 79, category: 'Family', desc: 'Wraps, fries, drinks for 4.', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=70' },
+  { id: 5, name: 'Loaded Fries', price: 14, category: 'Sides', desc: 'Cheese sauce + jalapeno.', image: 'https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=600&q=70' },
+  { id: 6, name: 'Grilled Chicken Meal', price: 28, category: 'Grills', desc: 'Quarter chicken + rice.', image: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=70' }
 ];
 
 const phone = '971500000000';
