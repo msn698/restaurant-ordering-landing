@@ -4,23 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Al Noor Kitchen | Order on WhatsApp</title>
-  <meta name="description" content="Restaurant ordering landing page with WhatsApp flow." />
+  <meta name="description" content="Client-ready restaurant ordering page with cart + WhatsApp checkout." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="nav reveal">
     <div class="brand">Al Noor Kitchen</div>
-    <a class="btn ghost" href="#menu">Menu</a>
+    <div class="nav-actions">
+      <a class="btn ghost" href="#menu">Menu</a>
+      <button id="cartBtn" class="btn cart-btn" type="button">Cart <span id="cartCount">0</span></button>
+    </div>
   </header>
 
   <main class="hero">
     <div class="hero-copy reveal delay-1">
-      <p class="badge">Fast delivery in Dubai</p>
+      <p class="badge">Fast delivery in Dubai · 30-40 mins</p>
       <h1>Order your favorites in <span>2 taps</span></h1>
       <p class="sub">Fresh shawarma, grills, and family meals. Pay cash or card on delivery.</p>
       <div class="cta-row">
-        <a id="waOrderBtn" class="btn pulse" href="#" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
-        <a class="btn ghost" href="#menu">See menu</a>
+        <a id="waQuickOrderBtn" class="btn pulse" href="#" target="_blank" rel="noopener noreferrer">Quick WhatsApp Order</a>
+        <a class="btn ghost" href="#menu">See Menu</a>
       </div>
     </div>
 
@@ -32,23 +35,41 @@
   </main>
 
   <section id="menu" class="menu reveal delay-2">
-    <h2>Top Picks</h2>
+    <div class="menu-header">
+      <h2>Menu</h2>
+      <div id="categories" class="chips"></div>
+    </div>
     <div class="grid" id="items"></div>
   </section>
 
   <section class="flow reveal delay-3">
     <h2>How ordering works</h2>
     <ol>
-      <li>Pick items from the menu</li>
-      <li>Tap WhatsApp order button</li>
-      <li>Send prefilled message and confirm address</li>
+      <li>Choose items from the menu</li>
+      <li>Add to cart in one click</li>
+      <li>Tap checkout to open WhatsApp with your order prefilled</li>
     </ol>
   </section>
 
   <footer class="reveal delay-3">
     <p>Demo project by Mohammed Saeed</p>
-    <small>Food images sourced from CleanPNG.</small>
+    <small>Food visuals sourced from CleanPNG.</small>
   </footer>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCartBtn" class="icon-btn" type="button">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <p>Subtotal: <strong id="cartSubtotal">AED 0</strong></p>
+      <button id="checkoutBtn" class="btn" type="button">Checkout on WhatsApp</button>
+      <button id="clearCartBtn" class="btn ghost" type="button">Clear cart</button>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay-screen" hidden></div>
 
   <script src="script.js"></script>
 </body>

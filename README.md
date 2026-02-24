@@ -1,20 +1,21 @@
 # Restaurant Ordering Landing Page + WhatsApp Flow
 
-Static demo project for restaurant conversion flow.
+Client-ready static landing page with cart-based WhatsApp checkout.
 
 ## Features
-- Mobile-friendly landing page
-- Menu section with top picks
-- One-tap WhatsApp order CTA with prefilled message
-- Smooth reveal, pulse, and floating animations
-- Food visuals (CleanPNG assets)
+- Responsive menu with category filters
+- Add-to-cart flow with quantity controls
+- Cart drawer with subtotal
+- Checkout opens WhatsApp with prefilled cart items
+- CTA + reveal/float/pulse animations
 
-## Local run
-Open `index.html` in browser.
+## Setup
+1. Edit phone number in `script.js` (`const phone = '9715...'`).
+2. Open `index.html` locally or deploy to GitHub Pages.
 
-## GitHub Pages
-Designed for direct hosting from `main` branch (`/root`).
+## Live Hosting
+This project is configured for GitHub Pages from `main` branch root.
 
-## Notes
-- Replace WhatsApp phone in `script.js`
-- Verify image license/attribution before commercial deployment
+## Assets
+Food visuals sourced from CleanPNG.
+Ensure license/attribution checks before commercial use.
