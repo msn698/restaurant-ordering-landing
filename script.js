@@ -1,10 +1,10 @@
 const menu = [
-  { id: 1, name: 'Chicken Shawarma', price: 12, category: 'Wraps', desc: 'Garlic sauce, pickles, fries.' },
-  { id: 2, name: 'Mix Grill Plate', price: 34, category: 'Grills', desc: 'Kebab, tikka, grilled chicken.' },
-  { id: 3, name: 'Zinger Wrap', price: 16, category: 'Wraps', desc: 'Crispy chicken, lettuce, mayo.' },
-  { id: 4, name: 'Family Meal Box', price: 79, category: 'Family', desc: 'Wraps, fries, drinks for 4.' },
-  { id: 5, name: 'Loaded Fries', price: 14, category: 'Sides', desc: 'Cheese sauce + jalapeno.' },
-  { id: 6, name: 'Grilled Chicken Meal', price: 28, category: 'Grills', desc: 'Quarter chicken + rice.' }
+  { id: 1, name: 'Chicken Shawarma', price: 12, category: 'Wraps', desc: 'Garlic sauce, pickles, fries.', image: 'assets/ac7nyu1f7.webp' },
+  { id: 2, name: 'Mix Grill Plate', price: 34, category: 'Grills', desc: 'Kebab, tikka, grilled chicken.', image: 'assets/ac7n6uwv0.webp' },
+  { id: 3, name: 'Zinger Wrap', price: 16, category: 'Wraps', desc: 'Crispy chicken, lettuce, mayo.', image: 'assets/ac7nyu1f7.webp' },
+  { id: 4, name: 'Family Meal Box', price: 79, category: 'Family', desc: 'Wraps, fries, drinks for 4.', image: 'assets/a90zx6u0e.webp' },
+  { id: 5, name: 'Loaded Fries', price: 14, category: 'Sides', desc: 'Cheese sauce + jalapeno.', image: 'assets/a90zx6u0e.webp' },
+  { id: 6, name: 'Grilled Chicken Meal', price: 28, category: 'Grills', desc: 'Quarter chicken + rice.', image: 'assets/ac7n6uwv0.webp' }
 ];
 
 const phone = '971500000000';
@@ -35,6 +35,7 @@ function renderMenu() {
   const filtered = currentCategory === 'All' ? menu : menu.filter(m => m.category === currentCategory);
   itemsEl.innerHTML = filtered.map(i => `
     <article class="item">
+      <div class="item-img-wrap"><img class="item-img" src="${i.image}" alt="${i.name}" /></div>
       <h4>${i.name}</h4>
       <p>${i.desc}</p>
       <div class="row">
